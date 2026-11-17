@@ -1,0 +1,14 @@
+# Build output
+build/
+build-*/
+out/
+cmake-build-*/
+
+# IDE files
+.vs/
+.vscode/
+.idea/
+CMakeUserPresets.json
+
+# Result and log files
+*.log
