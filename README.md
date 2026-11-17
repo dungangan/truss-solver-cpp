@@ -1,5 +1,7 @@
 # truss-solver-cpp
 
+[![CI](https://github.com/dungangan/truss-solver-cpp/actions/workflows/ci.yml/badge.svg)](https://github.com/dungangan/truss-solver-cpp/actions/workflows/ci.yml)
+
 A small finite element solver for 2D pin-jointed trusses, written in C++17 with
 OpenMP. It reads a plain text model, assembles the global stiffness matrix in
 parallel, solves for the nodal displacements and reports member forces, stresses

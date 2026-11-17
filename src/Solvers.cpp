@@ -8,7 +8,8 @@ namespace truss {
 namespace {
 
 // Below this size the OpenMP thread start-up costs more than the loop itself.
-constexpr int kParallelThreshold = 256;
+// Only the '#pragma omp' lines use it, hence [[maybe_unused]] for serial builds.
+[[maybe_unused]] constexpr int kParallelThreshold = 256;
 
 // A pivot smaller than this fraction of the original diagonal entry is treated as zero.
 constexpr double kPivotTolerance = 1e-10;
